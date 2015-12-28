@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'static_precompiler',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -73,6 +74,8 @@ TEMPLATES = [
         },
     },
 ]
+
+STATIC_ROOT = os.path.join(SETTINGS_PATH, 'static_complie'),
 
 
 
